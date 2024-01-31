@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -125,464 +128,305 @@ public class MainActivity extends AppCompatActivity {
         ImageView sor_wor = findViewById(R.id.img_sor_wor);
         ImageView u_ww1 = findViewById(R.id.img_u_ww1);
 
-        aaa_aab.setVisibility(View.GONE);
-        aaa_aal.setVisibility(View.GONE);
-        aaa_aaq.setVisibility(View.GONE);
-        aaa_abe.setVisibility(View.GONE);
-        aaa_mg.setVisibility(View.GONE);
-        aab_aac.setVisibility(View.GONE);
-        aab_aal.setVisibility(View.GONE);
-        aac_aad.setVisibility(View.GONE);
-        aad_aae.setVisibility(View.GONE);
-        aad_aag.setVisibility(View.GONE);
-        aad_aah.setVisibility(View.GONE);
-        aad_ic.setVisibility(View.GONE);
-        aae_aaf.setVisibility(View.GONE);
-        aae_ew4.setVisibility(View.GONE);
-        aae_ic.setVisibility(View.GONE);
-        aae_nw1.setVisibility(View.GONE);
-        aaf_aag.setVisibility(View.GONE);
-        aaf_ew1.setVisibility(View.GONE);
-        aaf_ew4.setVisibility(View.GONE);
-        aaf_fn.setVisibility(View.GONE);
-        aag_aah.setVisibility(View.GONE);
-        aag_fn.setVisibility(View.GONE);
-        aag_ic.setVisibility(View.GONE);
-        aah_sor.setVisibility(View.GONE);
-        aah_wor.setVisibility(View.GONE);
-        aai_ew1.setVisibility(View.GONE);
-        aai_ew2.setVisibility(View.GONE);
-        aaj_aak.setVisibility(View.GONE);
-        aaj_ew2.setVisibility(View.GONE);
-        aaj_fw.setVisibility(View.GONE);
-        aaj_lp1.setVisibility(View.GONE);
-        aak_aan.setVisibility(View.GONE);
-        aak_lp1.setVisibility(View.GONE);
-        aak_u.setVisibility(View.GONE);
-        aak_ww1.setVisibility(View.GONE);
-        aal_aam.setVisibility(View.GONE);
-        aal_mg.setVisibility(View.GONE);
-        aam_nor.setVisibility(View.GONE);
-        aan_aao.setVisibility(View.GONE);
-        aan_lp2.setVisibility(View.GONE);
-        aan_sb.setVisibility(View.GONE);
-        aan_sc.setVisibility(View.GONE);
-        aan_u.setVisibility(View.GONE);
-        aan_ww1.setVisibility(View.GONE);
-        aan_ww2.setVisibility(View.GONE);
-        aao_aav.setVisibility(View.GONE);
-        aao_cb.setVisibility(View.GONE);
-        aao_sb.setVisibility(View.GONE);
-        aao_sc.setVisibility(View.GONE);
-        aao_ww2.setVisibility(View.GONE);
-        aap_aav.setVisibility(View.GONE);
-        aap_le3.setVisibility(View.GONE);
-        aap_nw2.setVisibility(View.GONE);
-        aap_ww3.setVisibility(View.GONE);
-        aaq_aar.setVisibility(View.GONE);
-        aaq_poc.setVisibility(View.GONE);
-        aaq_ptc.setVisibility(View.GONE);
-        aar_aas.setVisibility(View.GONE);
-        aar_aat.setVisibility(View.GONE);
-        aar_poc.setVisibility(View.GONE);
-        aas_aau.setVisibility(View.GONE);
-        aas_aba.setVisibility(View.GONE);
-        aat_aau.setVisibility(View.GONE);
-        aau_le1.setVisibility(View.GONE);
-        aaw_aav.setVisibility(View.GONE);
-        aaw_aax.setVisibility(View.GONE);
-        aaw_cb.setVisibility(View.GONE);
-        aaw_le2.setVisibility(View.GONE);
-        aax_aay.setVisibility(View.GONE);
-        aax_cb.setVisibility(View.GONE);
-        aax_nal1.setVisibility(View.GONE);
-        aay_aaz.setVisibility(View.GONE);
-        aay_lh1.setVisibility(View.GONE);
-        aay_nal1.setVisibility(View.GONE);
-        aaz_lh1.setVisibility(View.GONE);
-        aaz_pp.setVisibility(View.GONE);
-        aba_abb.setVisibility(View.GONE);
-        aba_abf.setVisibility(View.GONE);
-        aba_al.setVisibility(View.GONE);
-        aba_peb.setVisibility(View.GONE);
-        aba_psp.setVisibility(View.GONE);
-        abb_abc.setVisibility(View.GONE);
-        abc_abd.setVisibility(View.GONE);
-        abd_abe.setVisibility(View.GONE);
-        abd_pg1.setVisibility(View.GONE);
-        abe_istr.setVisibility(View.GONE);
-        abe_pg1.setVisibility(View.GONE);
-        abf_abg.setVisibility(View.GONE);
-        abg_abh.setVisibility(View.GONE);
-        abh_nal2.setVisibility(View.GONE);
-        abi_abj.setVisibility(View.GONE);
-        abi_abk.setVisibility(View.GONE);
-        abi_at.setVisibility(View.GONE);
-        abi_le1.setVisibility(View.GONE);
-        abj_abk.setVisibility(View.GONE);
-        abj_at.setVisibility(View.GONE);
-        abj_le1.setVisibility(View.GONE);
-        abj_le3.setVisibility(View.GONE);
-        abk_le2.setVisibility(View.GONE);
-        eor_nor.setVisibility(View.GONE);
-        eor_sor.setVisibility(View.GONE);
-        gs_wor.setVisibility(View.GONE);
-        le2_le3.setVisibility(View.GONE);
-        lp3_sc.setVisibility(View.GONE);
-        nor_wor.setVisibility(View.GONE);
-        nw1_ew4.setVisibility(View.GONE);
-        nw1_nw2.setVisibility(View.GONE);
-        nw2_ww3.setVisibility(View.GONE);
-        sb_sc.setVisibility(View.GONE);
-        sor_wor.setVisibility(View.GONE);
-        u_ww1.setVisibility(View.GONE);
+        ImageView[] imageview_list = {
+                aaa_aab, aaa_aal, aaa_aaq, aaa_abe, aaa_mg,
+                aab_aac, aab_aal,
+                aac_aad,
+                aad_aae, aad_aag, aad_aah, aad_ic,
+                aae_aaf, aae_ew4, aae_ic, aae_nw1,
+                aaf_aag, aaf_ew1, aaf_ew4, aaf_fn,
+                aag_aah, aag_fn, aag_ic,
+                aah_sor, aah_wor,
+                aai_ew1, aai_ew2,
+                aaj_aak, aaj_ew2, aaj_fw, aaj_lp1,
+                aak_aan, aak_lp1, aak_u, aak_ww1,
+                aal_aam, aal_mg,
+                aam_nor,
+                aan_aao, aan_lp2, aan_sb, aan_sc, aan_u, aan_ww1, aan_ww2,
+                aao_aav, aao_cb, aao_sb, aao_sc, aao_ww2,
+                aap_aav, aap_le3, aap_nw2, aap_ww3,
+                aaq_aar, aaq_poc, aaq_ptc,
+                aar_aas, aar_aat, aar_poc,
+                aas_aau, aas_aba,
+                aat_aau,
+                aau_le1,
+                aaw_aav, aaw_aax, aaw_cb, aaw_le2,
+                aax_aay, aax_cb, aax_nal1,
+                aay_aaz, aay_lh1, aay_nal1,
+                aaz_lh1, aaz_pp,
+                aba_abb, aba_abf, aba_al, aba_peb, aba_psp,
+                abb_abc,
+                abc_abd,
+                abd_abe, abd_pg1,
+                abe_istr, abe_pg1,
+                abf_abg,
+                abg_abh,
+                abh_nal2,
+                abi_abj, abi_abk, abi_at, abi_le1,
+                abj_abk, abj_at, abj_le1, abj_le3,
+                abk_le2,
+                eor_nor, eor_sor,
+                gs_wor,
+                le2_le3,
+                lp3_sc,
+                nor_wor,
+                nw1_ew4, nw1_nw2,
+                nw2_ww3,
+                sb_sc,
+                sor_wor,
+                u_ww1
+        };
+        for (ImageView imageView : imageview_list) imageView.setVisibility(View.GONE);
 
         //Sample Path: Main Gate to Lagoon Entrance 1
-        //String[] samplePath = {"mg", "aaa", "aaq", "aar", "aat", "aau", "le1"};
+        //String[] path = {"mg", "aaa", "aaq", "aar", "aat", "aau", "le1"};
 
         //Sample Path: Grandstand to Linear Park 1
-        String[] samplePath = {"gs", "wor", "aah", "aag", "aaf", "ew1", "aai", "ew2", "aaj", "lp1"};
+        //String[] path = {"gs", "wor", "aah", "aag", "aaf", "ew1", "aai", "ew2", "aaj", "lp1"};
 
         //Sample Path: Ninoy Library 2 to East Wing 4
-        //String[] samplePath = {"nal2", "abh", "abg", "abf", "aba", "aas", "aau", "le1", "abj", "le3", "aap", "nw2", "nw1", "ew4"};
-
-
-        int pathLength = samplePath.length;
-
-        for (int i = 0; i < pathLength - 1; i++) {
-            if ((samplePath[i].equals("aaa") && samplePath[i + 1].equals("aab")) || (samplePath[i].equals("aab") && samplePath[i + 1].equals("aaa")))
-                aaa_aab.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aaa") && samplePath[i + 1].equals("aal")) || (samplePath[i].equals("aal") && samplePath[i + 1].equals("aaa")))
-                aaa_aal.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aaa") && samplePath[i + 1].equals("aaq")) || (samplePath[i].equals("aaq") && samplePath[i + 1].equals("aaa")))
-                aaa_aaq.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aaa") && samplePath[i + 1].equals("abe")) || (samplePath[i].equals("abe") && samplePath[i + 1].equals("aaa")))
-                aaa_abe.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aaa") && samplePath[i + 1].equals("mg")) || (samplePath[i].equals("mg") && samplePath[i + 1].equals("aaa")))
-                aaa_mg.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aab") && samplePath[i + 1].equals("aac")) || (samplePath[i].equals("aac") && samplePath[i + 1].equals("aab")))
-                aab_aac.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aab") && samplePath[i + 1].equals("aal")) || (samplePath[i].equals("aal") && samplePath[i + 1].equals("aab")))
-                aab_aal.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aac") && samplePath[i + 1].equals("aad")) || (samplePath[i].equals("aad") && samplePath[i + 1].equals("aac")))
-                aac_aad.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aad") && samplePath[i + 1].equals("aae")) || (samplePath[i].equals("aae") && samplePath[i + 1].equals("aad")))
-                aad_aae.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aad") && samplePath[i + 1].equals("aag")) || (samplePath[i].equals("aag") && samplePath[i + 1].equals("aad")))
-                aad_aag.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aad") && samplePath[i + 1].equals("aah")) || (samplePath[i].equals("aah") && samplePath[i + 1].equals("aad")))
-                aad_aah.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aad") && samplePath[i + 1].equals("ic")) || (samplePath[i].equals("ic") && samplePath[i + 1].equals("aad")))
-                aad_ic.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aae") && samplePath[i + 1].equals("aaf")) || (samplePath[i].equals("aaf") && samplePath[i + 1].equals("aae")))
-                aae_aaf.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aae") && samplePath[i + 1].equals("ew4")) || (samplePath[i].equals("ew4") && samplePath[i + 1].equals("aae")))
-                aae_ew4.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aae") && samplePath[i + 1].equals("ic")) || (samplePath[i].equals("ic") && samplePath[i + 1].equals("aae")))
-                aae_ic.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aae") && samplePath[i + 1].equals("nw1")) || (samplePath[i].equals("nw1") && samplePath[i + 1].equals("aae")))
-                aae_nw1.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aaf") && samplePath[i + 1].equals("aag")) || (samplePath[i].equals("aag") && samplePath[i + 1].equals("aaf")))
-                aaf_aag.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aaf") && samplePath[i + 1].equals("ew1")) || (samplePath[i].equals("ew1") && samplePath[i + 1].equals("aaf")))
-                aaf_ew1.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aaf") && samplePath[i + 1].equals("ew4")) || (samplePath[i].equals("ew4") && samplePath[i + 1].equals("aaf")))
-                aaf_ew4.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aaf") && samplePath[i + 1].equals("fn")) || (samplePath[i].equals("fn") && samplePath[i + 1].equals("aaf")))
-                aaf_fn.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aag") && samplePath[i + 1].equals("aah")) || (samplePath[i].equals("aah") && samplePath[i + 1].equals("aag")))
-                aag_aah.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aag") && samplePath[i + 1].equals("fn")) || (samplePath[i].equals("fn") && samplePath[i + 1].equals("aag")))
-                aag_fn.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aag") && samplePath[i + 1].equals("ic")) || (samplePath[i].equals("ic") && samplePath[i + 1].equals("aag")))
-                aag_ic.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aah") && samplePath[i + 1].equals("sor")) || (samplePath[i].equals("sor") && samplePath[i + 1].equals("aah")))
-                aah_sor.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aah") && samplePath[i + 1].equals("wor")) || (samplePath[i].equals("wor") && samplePath[i + 1].equals("aah")))
-                aah_wor.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aai") && samplePath[i + 1].equals("ew1")) || (samplePath[i].equals("ew1") && samplePath[i + 1].equals("aai")))
-                aai_ew1.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aai") && samplePath[i + 1].equals("ew2")) || (samplePath[i].equals("ew2") && samplePath[i + 1].equals("aai")))
-                aai_ew2.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aaj") && samplePath[i + 1].equals("aak")) || (samplePath[i].equals("aak") && samplePath[i + 1].equals("aaj")))
-                aaj_aak.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aaj") && samplePath[i + 1].equals("ew2")) || (samplePath[i].equals("ew2") && samplePath[i + 1].equals("aaj")))
-                aaj_ew2.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aaj") && samplePath[i + 1].equals("fw")) || (samplePath[i].equals("fw") && samplePath[i + 1].equals("aaj")))
-                aaj_fw.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aaj") && samplePath[i + 1].equals("lp1")) || (samplePath[i].equals("lp1") && samplePath[i + 1].equals("aaj")))
-                aaj_lp1.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aak") && samplePath[i + 1].equals("aan")) || (samplePath[i].equals("aan") && samplePath[i + 1].equals("aak")))
-                aak_aan.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aak") && samplePath[i + 1].equals("lp1")) || (samplePath[i].equals("lp1") && samplePath[i + 1].equals("aak")))
-                aak_lp1.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aak") && samplePath[i + 1].equals("u")) || (samplePath[i].equals("u") && samplePath[i + 1].equals("aak")))
-                aak_u.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aak") && samplePath[i + 1].equals("ww1")) || (samplePath[i].equals("ww1") && samplePath[i + 1].equals("aak")))
-                aak_ww1.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aal") && samplePath[i + 1].equals("aam")) || (samplePath[i].equals("aam") && samplePath[i + 1].equals("aal")))
-                aal_aam.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aal") && samplePath[i + 1].equals("mg")) || (samplePath[i].equals("mg") && samplePath[i + 1].equals("aal")))
-                aal_mg.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aam") && samplePath[i + 1].equals("nor")) || (samplePath[i].equals("nor") && samplePath[i + 1].equals("aam")))
-                aam_nor.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aan") && samplePath[i + 1].equals("aao")) || (samplePath[i].equals("aao") && samplePath[i + 1].equals("aan")))
-                aan_aao.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aan") && samplePath[i + 1].equals("lp2")) || (samplePath[i].equals("lp2") && samplePath[i + 1].equals("aan")))
-                aan_lp2.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aan") && samplePath[i + 1].equals("sb")) || (samplePath[i].equals("sb") && samplePath[i + 1].equals("aan")))
-                aan_sb.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aan") && samplePath[i + 1].equals("sc")) || (samplePath[i].equals("sc") && samplePath[i + 1].equals("aan")))
-                aan_sc.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aan") && samplePath[i + 1].equals("u")) || (samplePath[i].equals("u") && samplePath[i + 1].equals("aan")))
-                aan_u.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aan") && samplePath[i + 1].equals("ww1")) || (samplePath[i].equals("ww1") && samplePath[i + 1].equals("aan")))
-                aan_ww1.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aan") && samplePath[i + 1].equals("ww2")) || (samplePath[i].equals("ww2") && samplePath[i + 1].equals("aan")))
-                aan_ww2.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aao") && samplePath[i + 1].equals("aav")) || (samplePath[i].equals("aav") && samplePath[i + 1].equals("aao")))
-                aao_aav.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aao") && samplePath[i + 1].equals("cb")) || (samplePath[i].equals("cb") && samplePath[i + 1].equals("aao")))
-                aao_cb.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aao") && samplePath[i + 1].equals("sb")) || (samplePath[i].equals("sb") && samplePath[i + 1].equals("aao")))
-                aao_sb.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aao") && samplePath[i + 1].equals("sc")) || (samplePath[i].equals("sc") && samplePath[i + 1].equals("aao")))
-                aao_sc.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aao") && samplePath[i + 1].equals("ww2")) || (samplePath[i].equals("ww2") && samplePath[i + 1].equals("aao")))
-                aao_ww2.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aap") && samplePath[i + 1].equals("aav")) || (samplePath[i].equals("aav") && samplePath[i + 1].equals("aap")))
-                aap_aav.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aap") && samplePath[i + 1].equals("le3")) || (samplePath[i].equals("le3") && samplePath[i + 1].equals("aap")))
-                aap_le3.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aap") && samplePath[i + 1].equals("nw2")) || (samplePath[i].equals("nw2") && samplePath[i + 1].equals("aap")))
-                aap_nw2.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aap") && samplePath[i + 1].equals("ww3")) || (samplePath[i].equals("ww3") && samplePath[i + 1].equals("aap")))
-                aap_ww3.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aaq") && samplePath[i + 1].equals("aar")) || (samplePath[i].equals("aar") && samplePath[i + 1].equals("aaq")))
-                aaq_aar.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aaq") && samplePath[i + 1].equals("poc")) || (samplePath[i].equals("poc") && samplePath[i + 1].equals("aaq")))
-                aaq_poc.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aaq") && samplePath[i + 1].equals("ptc")) || (samplePath[i].equals("ptc") && samplePath[i + 1].equals("aaq")))
-                aaq_ptc.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aar") && samplePath[i + 1].equals("aas")) || (samplePath[i].equals("aas") && samplePath[i + 1].equals("aar")))
-                aar_aas.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aar") && samplePath[i + 1].equals("aat")) || (samplePath[i].equals("aat") && samplePath[i + 1].equals("aar")))
-                aar_aat.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aar") && samplePath[i + 1].equals("poc")) || (samplePath[i].equals("poc") && samplePath[i + 1].equals("aar")))
-                aar_poc.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aas") && samplePath[i + 1].equals("aau")) || (samplePath[i].equals("aau") && samplePath[i + 1].equals("aas")))
-                aas_aau.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aas") && samplePath[i + 1].equals("aba")) || (samplePath[i].equals("aba") && samplePath[i + 1].equals("aas")))
-                aas_aba.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aat") && samplePath[i + 1].equals("aau")) || (samplePath[i].equals("aau") && samplePath[i + 1].equals("aat")))
-                aat_aau.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aau") && samplePath[i + 1].equals("le1")) || (samplePath[i].equals("le1") && samplePath[i + 1].equals("aau")))
-                aau_le1.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aaw") && samplePath[i + 1].equals("aav")) || (samplePath[i].equals("aav") && samplePath[i + 1].equals("aaw")))
-                aaw_aav.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aaw") && samplePath[i + 1].equals("aax")) || (samplePath[i].equals("aax") && samplePath[i + 1].equals("aaw")))
-                aaw_aax.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aaw") && samplePath[i + 1].equals("cb")) || (samplePath[i].equals("cb") && samplePath[i + 1].equals("aaw")))
-                aaw_cb.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aaw") && samplePath[i + 1].equals("le2")) || (samplePath[i].equals("le2") && samplePath[i + 1].equals("aaw")))
-                aaw_le2.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aax") && samplePath[i + 1].equals("aay")) || (samplePath[i].equals("aay") && samplePath[i + 1].equals("aax")))
-                aax_aay.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aax") && samplePath[i + 1].equals("cb")) || (samplePath[i].equals("cb") && samplePath[i + 1].equals("aax")))
-                aax_cb.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aax") && samplePath[i + 1].equals("nal1")) || (samplePath[i].equals("nal1") && samplePath[i + 1].equals("aax")))
-                aax_nal1.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aay") && samplePath[i + 1].equals("aaz")) || (samplePath[i].equals("aaz") && samplePath[i + 1].equals("aay")))
-                aay_aaz.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aay") && samplePath[i + 1].equals("lh1")) || (samplePath[i].equals("lh1") && samplePath[i + 1].equals("aay")))
-                aay_lh1.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aay") && samplePath[i + 1].equals("nal1")) || (samplePath[i].equals("nal1") && samplePath[i + 1].equals("aay")))
-                aay_nal1.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aaz") && samplePath[i + 1].equals("lh1")) || (samplePath[i].equals("lh1") && samplePath[i + 1].equals("aaz")))
-                aaz_lh1.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aaz") && samplePath[i + 1].equals("pp")) || (samplePath[i].equals("pp") && samplePath[i + 1].equals("aaz")))
-                aaz_pp.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aba") && samplePath[i + 1].equals("abb")) || (samplePath[i].equals("abb") && samplePath[i + 1].equals("aba")))
-                aba_abb.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aba") && samplePath[i + 1].equals("abf")) || (samplePath[i].equals("abf") && samplePath[i + 1].equals("aba")))
-                aba_abf.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aba") && samplePath[i + 1].equals("al")) || (samplePath[i].equals("al") && samplePath[i + 1].equals("aba")))
-                aba_al.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aba") && samplePath[i + 1].equals("peb")) || (samplePath[i].equals("peb") && samplePath[i + 1].equals("aba")))
-                aba_peb.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("aba") && samplePath[i + 1].equals("psp")) || (samplePath[i].equals("psp") && samplePath[i + 1].equals("aba")))
-                aba_psp.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("abb") && samplePath[i + 1].equals("abc")) || (samplePath[i].equals("abc") && samplePath[i + 1].equals("abb")))
-                abb_abc.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("abc") && samplePath[i + 1].equals("abd")) || (samplePath[i].equals("abd") && samplePath[i + 1].equals("abc")))
-                abc_abd.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("abd") && samplePath[i + 1].equals("abe")) || (samplePath[i].equals("abe") && samplePath[i + 1].equals("abd")))
-                abd_abe.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("abd") && samplePath[i + 1].equals("pg1")) || (samplePath[i].equals("pg1") && samplePath[i + 1].equals("abd")))
-                abd_pg1.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("abe") && samplePath[i + 1].equals("istr")) || (samplePath[i].equals("istr") && samplePath[i + 1].equals("abe")))
-                abe_istr.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("abe") && samplePath[i + 1].equals("pg1")) || (samplePath[i].equals("pg1") && samplePath[i + 1].equals("abe")))
-                abe_pg1.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("abf") && samplePath[i + 1].equals("abg")) || (samplePath[i].equals("abg") && samplePath[i + 1].equals("abf")))
-                abf_abg.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("abg") && samplePath[i + 1].equals("abh")) || (samplePath[i].equals("abh") && samplePath[i + 1].equals("abg")))
-                abg_abh.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("abh") && samplePath[i + 1].equals("nal2")) || (samplePath[i].equals("nal2") && samplePath[i + 1].equals("abh")))
-                abh_nal2.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("abi") && samplePath[i + 1].equals("abj")) || (samplePath[i].equals("abj") && samplePath[i + 1].equals("abi")))
-                abi_abj.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("abi") && samplePath[i + 1].equals("abk")) || (samplePath[i].equals("abk") && samplePath[i + 1].equals("abi")))
-                abi_abk.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("abi") && samplePath[i + 1].equals("at")) || (samplePath[i].equals("at") && samplePath[i + 1].equals("abi")))
-                abi_at.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("abi") && samplePath[i + 1].equals("le1")) || (samplePath[i].equals("le1") && samplePath[i + 1].equals("abi")))
-                abi_le1.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("abj") && samplePath[i + 1].equals("abk")) || (samplePath[i].equals("abk") && samplePath[i + 1].equals("abj")))
-                abj_abk.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("abj") && samplePath[i + 1].equals("at")) || (samplePath[i].equals("at") && samplePath[i + 1].equals("abj")))
-                abj_at.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("abj") && samplePath[i + 1].equals("le1")) || (samplePath[i].equals("le1") && samplePath[i + 1].equals("abj")))
-                abj_le1.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("abj") && samplePath[i + 1].equals("le3")) || (samplePath[i].equals("le3") && samplePath[i + 1].equals("abj")))
-                abj_le3.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("abk") && samplePath[i + 1].equals("le2")) || (samplePath[i].equals("le2") && samplePath[i + 1].equals("abk")))
-                abk_le2.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("eor") && samplePath[i + 1].equals("nor")) || (samplePath[i].equals("nor") && samplePath[i + 1].equals("eor")))
-                eor_nor.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("eor") && samplePath[i + 1].equals("sor")) || (samplePath[i].equals("sor") && samplePath[i + 1].equals("eor")))
-                eor_sor.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("gs") && samplePath[i + 1].equals("wor")) || (samplePath[i].equals("wor") && samplePath[i + 1].equals("gs")))
-                gs_wor.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("le2") && samplePath[i + 1].equals("le3")) || (samplePath[i].equals("le3") && samplePath[i + 1].equals("le2")))
-                le2_le3.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("lp3") && samplePath[i + 1].equals("sc")) || (samplePath[i].equals("sc") && samplePath[i + 1].equals("lp3")))
-                lp3_sc.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("nor") && samplePath[i + 1].equals("wor")) || (samplePath[i].equals("wor") && samplePath[i + 1].equals("nor")))
-                nor_wor.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("nw1") && samplePath[i + 1].equals("ew4")) || (samplePath[i].equals("ew4") && samplePath[i + 1].equals("nw1")))
-                nw1_ew4.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("nw1") && samplePath[i + 1].equals("nw2")) || (samplePath[i].equals("nw2") && samplePath[i + 1].equals("nw1")))
-                nw1_nw2.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("nw2") && samplePath[i + 1].equals("ww3")) || (samplePath[i].equals("ww3") && samplePath[i + 1].equals("nw2")))
-                nw2_ww3.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("sb") && samplePath[i + 1].equals("sc")) || (samplePath[i].equals("sc") && samplePath[i + 1].equals("sb")))
-                sb_sc.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("sor") && samplePath[i + 1].equals("wor")) || (samplePath[i].equals("wor") && samplePath[i + 1].equals("sor")))
-                sor_wor.setVisibility(View.VISIBLE);
-
-            else if((samplePath[i].equals("u") && samplePath[i + 1].equals("ww1")) || (samplePath[i].equals("ww1") && samplePath[i + 1].equals("u")))
-                u_ww1.setVisibility(View.VISIBLE);
-
+        String[] path = {"nal2", "abh", "abg", "abf", "aba", "aas", "aau", "le1", "abj", "le3", "aap", "nw2", "nw1", "ew4"};
+
+        Map<String, ImageView> line_path = new HashMap<>();
+        line_path.put("aaa_aab", aaa_aab);
+        line_path.put("aaa_aal", aaa_aal);
+        line_path.put("aaa_aaq", aaa_aaq);
+        line_path.put("aaa_abe", aaa_abe);
+        line_path.put("aaa_mg", aaa_mg);
+        line_path.put("aab_aaa", aaa_aab);
+        line_path.put("aab_aac", aab_aac);
+        line_path.put("aab_aal", aab_aal);
+        line_path.put("aac_aab", aab_aac);
+        line_path.put("aac_aad", aac_aad);
+        line_path.put("aad_aac", aac_aad);
+        line_path.put("aad_aae", aad_aae);
+        line_path.put("aad_aag", aad_aag);
+        line_path.put("aad_aah", aad_aah);
+        line_path.put("aad_ic", aad_ic);
+        line_path.put("aae_aad", aad_aae);
+        line_path.put("aae_aaf", aae_aaf);
+        line_path.put("aae_ew4", aae_ew4);
+        line_path.put("aae_ic", aae_ic);
+        line_path.put("aae_nw1", aae_nw1);
+        line_path.put("aaf_aae", aae_aaf);
+        line_path.put("aaf_aag", aaf_aag);
+        line_path.put("aaf_ew1", aaf_ew1);
+        line_path.put("aaf_ew4", aaf_ew4);
+        line_path.put("aaf_fn", aaf_fn);
+        line_path.put("aag_aad", aad_aag);
+        line_path.put("aag_aaf", aaf_aag);
+        line_path.put("aag_aah", aag_aah);
+        line_path.put("aag_fn", aag_fn);
+        line_path.put("aag_ic", aag_ic);
+        line_path.put("aah_aad", aad_aah);
+        line_path.put("aah_aag", aag_aah);
+        line_path.put("aah_sor", aah_sor);
+        line_path.put("aah_wor", aah_wor);
+        line_path.put("aai_ew1", aai_ew1);
+        line_path.put("aai_ew2", aai_ew2);
+        line_path.put("aaj_aak", aaj_aak);
+        line_path.put("aaj_ew2", aaj_ew2);
+        line_path.put("aaj_fw", aaj_fw);
+        line_path.put("aaj_lp1", aaj_lp1);
+        line_path.put("aak_aaj", aaj_aak);
+        line_path.put("aak_aan", aak_aan);
+        line_path.put("aak_lp1", aak_lp1);
+        line_path.put("aak_u", aak_u);
+        line_path.put("aak_ww1", aak_ww1);
+        line_path.put("aal_aaa", aaa_aal);
+        line_path.put("aal_aab", aab_aal);
+        line_path.put("aal_aam", aal_aam);
+        line_path.put("aal_mg", aal_mg);
+        line_path.put("aam_aal", aal_aam);
+        line_path.put("aam_nor", aam_nor);
+        line_path.put("aan_aak", aak_aan);
+        line_path.put("aan_aao", aan_aao);
+        line_path.put("aan_lp2", aan_lp2);
+        line_path.put("aan_sb", aan_sb);
+        line_path.put("aan_sc", aan_sc);
+        line_path.put("aan_u", aan_u);
+        line_path.put("aan_ww1", aan_ww1);
+        line_path.put("aan_ww2", aan_ww2);
+        line_path.put("aao_aan", aan_aao);
+        line_path.put("aao_aav", aao_aav);
+        line_path.put("aao_cb", aao_cb);
+        line_path.put("aao_sb", aao_sb);
+        line_path.put("aao_sc", aao_sc);
+        line_path.put("aao_ww2", aao_ww2);
+        line_path.put("aap_aav", aap_aav);
+        line_path.put("aap_le3", aap_le3);
+        line_path.put("aap_nw2", aap_nw2);
+        line_path.put("aap_ww3", aap_ww3);
+        line_path.put("aaq_aaa", aaa_aaq);
+        line_path.put("aaq_aar", aaq_aar);
+        line_path.put("aaq_poc", aaq_poc);
+        line_path.put("aaq_ptc", aaq_ptc);
+        line_path.put("aar_aaq", aaq_aar);
+        line_path.put("aar_aas", aar_aas);
+        line_path.put("aar_aat", aar_aat);
+        line_path.put("aar_poc", aar_poc);
+        line_path.put("aas_aar", aar_aas);
+        line_path.put("aas_aau", aas_aau);
+        line_path.put("aas_aba", aas_aba);
+        line_path.put("aat_aar", aar_aat);
+        line_path.put("aat_aau", aat_aau);
+        line_path.put("aau_aas", aas_aau);
+        line_path.put("aau_aat", aat_aau);
+        line_path.put("aau_le1", aau_le1);
+        line_path.put("aav_aao", aao_aav);
+        line_path.put("aav_aap", aap_aav);
+        line_path.put("aav_aaw", aaw_aav);
+        line_path.put("aaw_aav", aaw_aav);
+        line_path.put("aaw_aax", aaw_aax);
+        line_path.put("aaw_cb", aaw_cb);
+        line_path.put("aaw_le2", aaw_le2);
+        line_path.put("aax_aaw", aaw_aax);
+        line_path.put("aax_aay", aax_aay);
+        line_path.put("aax_cb", aax_cb);
+        line_path.put("aax_nal1", aax_nal1);
+        line_path.put("aay_aax", aax_aay);
+        line_path.put("aay_aaz", aay_aaz);
+        line_path.put("aay_lh1", aay_lh1);
+        line_path.put("aay_nal1", aay_nal1);
+        line_path.put("aaz_aay", aay_aaz);
+        line_path.put("aaz_lh1", aaz_lh1);
+        line_path.put("aaz_pp", aaz_pp);
+        line_path.put("aba_aas", aas_aba);
+        line_path.put("aba_abb", aba_abb);
+        line_path.put("aba_abf", aba_abf);
+        line_path.put("aba_al", aba_al);
+        line_path.put("aba_peb", aba_peb);
+        line_path.put("aba_psp", aba_psp);
+        line_path.put("abb_aba", aba_abb);
+        line_path.put("abb_abc", abb_abc);
+        line_path.put("abc_abb", abb_abc);
+        line_path.put("abc_abd", abc_abd);
+        line_path.put("abd_abc", abc_abd);
+        line_path.put("abd_abe", abd_abe);
+        line_path.put("abd_pg1", abd_pg1);
+        line_path.put("abe_aaa", aaa_abe);
+        line_path.put("abe_abd", abd_abe);
+        line_path.put("abe_istr", abe_istr);
+        line_path.put("abe_pg1", abe_pg1);
+        line_path.put("abf_aba", aba_abf);
+        line_path.put("abf_abg", abf_abg);
+        line_path.put("abg_abf", abf_abg);
+        line_path.put("abg_abh", abg_abh);
+        line_path.put("abh_abg", abg_abh);
+        line_path.put("abh_nal2", abh_nal2);
+        line_path.put("abi_abj", abi_abj);
+        line_path.put("abi_abk", abi_abk);
+        line_path.put("abi_at", abi_at);
+        line_path.put("abi_le1", abi_le1);
+        line_path.put("abj_abi", abi_abj);
+        line_path.put("abj_abk", abj_abk);
+        line_path.put("abj_at", abj_at);
+        line_path.put("abj_le1", abj_le1);
+        line_path.put("abj_le3", abj_le3);
+        line_path.put("abk_abj", abj_abk);
+        line_path.put("abk_abi", abi_abk);
+        line_path.put("abk_le2", abk_le2);
+        line_path.put("al_aba", aba_al);
+        line_path.put("at_abi", abi_at);
+        line_path.put("at_abj", abj_at);
+        line_path.put("cb_aao", aao_cb);
+        line_path.put("cb_aaw", aaw_cb);
+        line_path.put("cb_aax", aax_cb);
+        line_path.put("eor_nor", eor_nor);
+        line_path.put("eor_sor", eor_sor);
+        line_path.put("ew1_aaf", aaf_ew1);
+        line_path.put("ew1_aai", aai_ew1);
+        line_path.put("ew2_aai", aai_ew2);
+        line_path.put("ew2_aaj", aaj_ew2);
+        line_path.put("ew4_aae", aae_ew4);
+        line_path.put("ew4_aaf", aaf_ew4);
+        line_path.put("fn_aaf", aaf_fn);
+        line_path.put("fn_aag", aag_fn);
+        line_path.put("fw_aaj", aaj_fw);
+        line_path.put("gs_wor", gs_wor);
+        line_path.put("ic_aad", aad_ic);
+        line_path.put("ic_aae", aae_ic);
+        line_path.put("ic_aag", aag_ic);
+        line_path.put("istr_abe", abe_istr);
+        line_path.put("le1_aau", aau_le1);
+        line_path.put("le1_abi", abi_le1);
+        line_path.put("le1_abj", abj_le1);
+        line_path.put("le2_aaw", aaw_le2);
+        line_path.put("le2_abk", abk_le2);
+        line_path.put("le2_le3", le2_le3);
+        line_path.put("le3_aap", aap_le3);
+        line_path.put("le3_abj", abj_le3);
+        line_path.put("le3_le2", le2_le3);
+        line_path.put("lh1_aay", aay_lh1);
+        line_path.put("lh1_aaz", aaz_lh1);
+        line_path.put("lp1_aaj", aaj_lp1);
+        line_path.put("lp1_aak", aak_lp1);
+        line_path.put("lp2_aan", aan_lp2);
+        line_path.put("lp3_sc", lp3_sc);
+        line_path.put("mg_aaa", aaa_mg);
+        line_path.put("mg_aal", aal_mg);
+        line_path.put("nal1_aax", aax_nal1);
+        line_path.put("nal1_aay", aay_nal1);
+        line_path.put("nal2_abh", abh_nal2);
+        line_path.put("nor_aam", aam_nor);
+        line_path.put("nor_eor", eor_nor);
+        line_path.put("nor_wor", nor_wor);
+        line_path.put("nw1_aae", aae_nw1);
+        line_path.put("nw1_ew4", nw1_ew4);
+        line_path.put("nw1_nw2", nw1_nw2);
+        line_path.put("nw2_aap", aap_nw2);
+        line_path.put("nw2_nw1", nw1_nw2);
+        line_path.put("nw2_ww3", nw2_ww3);
+        line_path.put("peb_aba", aba_peb);
+        line_path.put("pg1_abd", abd_pg1);
+        line_path.put("pg1_abe", abe_pg1);
+        line_path.put("poc_aaq", aaq_poc);
+        line_path.put("poc_aar", aar_poc);
+        line_path.put("pp_aaz", aaz_pp);
+        line_path.put("psp_aba", aba_psp);
+        line_path.put("ptc_aaq", aaq_ptc);
+        line_path.put("sb_aan", aan_sb);
+        line_path.put("sb_aao", aao_sb);
+        line_path.put("sb_sc", sb_sc);
+        line_path.put("sc_aan", aan_sc);
+        line_path.put("sc_aao", aao_sc);
+        line_path.put("sc_lp3", lp3_sc);
+        line_path.put("sc_sb", sb_sc);
+        line_path.put("sor_aah", aah_sor);
+        line_path.put("sor_eor", eor_sor);
+        line_path.put("sor_wor", sor_wor);
+        line_path.put("u_aak", aak_u);
+        line_path.put("u_aan", aan_u);
+        line_path.put("u_ww1", u_ww1);
+        line_path.put("wor_aah", aah_wor);
+        line_path.put("wor_gs", gs_wor);
+        line_path.put("wor_nor", nor_wor);
+        line_path.put("wor_sor", sor_wor);
+        line_path.put("ww1_aak", aak_ww1);
+        line_path.put("ww1_aan", aan_ww1);
+        line_path.put("ww1_u", u_ww1);
+        line_path.put("ww2_aan", aan_ww2);
+        line_path.put("ww2_aao", aao_ww2);
+        line_path.put("ww3_aap", aap_ww3);
+        line_path.put("ww3_nw2", nw2_ww3);
+
+        //line_path.put("", );
+
+        int path_length = path.length;
+        int starting_point = 0;
+        String previous_node = null, combined_node;
+
+        for (int j = 0; j < path_length; j++) {
+            if (starting_point != 0) {
+                combined_node = previous_node + "_" + path[j];
+                ImageView x = line_path.get(combined_node);
+                x.setVisibility(View.VISIBLE);
+                previous_node = path[j];
+            }
+            else {
+                previous_node = path[j];
+                starting_point = 1;
+            }
         }
 
     }
