@@ -233,7 +233,6 @@ public class MainActivity extends AppCompatActivity {
 
         int ivl_len = imageview_list.length;
         for (int i = 0; i < ivl_len; i++) {
-            imageview_list[i].setVisibility(View.GONE);
             String[] parts;
 
             parts = ivl_string[i].split("_");
@@ -244,7 +243,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //Sample Path: Main Gate to Lagoon Entrance 1
-        //String[] path = {"mg", "aaa", "aaq", "aar", "aat", "aau", "le1"};
+        String[] path = {"mg", "aaa", "aaq", "aar", "aat", "aau", "le1"};
         //String[] path = {"le1", "aau", "aat", "aar", "aaq", "aaa", "mg"};
 
         //Sample Path: Grandstand to Linear Park 1
@@ -252,6 +251,8 @@ public class MainActivity extends AppCompatActivity {
 
         //Sample Path: Ninoy Library 2 to East Wing 4
         //String[] path = {"nal2", "abh", "abg", "abf", "aba", "aas", "aau", "le1", "abj", "le3", "aap", "nw2", "nw1", "ew4"};
+
+        for (ImageView imageView : imageview_list) imageView.setVisibility(View.GONE);
 
         int path_length = path.length;
         int starting_point = 0;
