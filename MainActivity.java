@@ -229,19 +229,9 @@ public class MainActivity extends AppCompatActivity {
                 "u_ww1"
         };
 
-        //Sample Path: Main Gate to Lagoon Entrance 1
-        //String[] path = {"mg", "aaa", "aaq", "aar", "aat", "aau", "le1"};
-
-        //Sample Path: Grandstand to Linear Park 1
-        //String[] path = {"gs", "wor", "aah", "aag", "aaf", "ew1", "aai", "ew2", "aaj", "lp1"};
-
-        //Sample Path: Ninoy Library 2 to East Wing 4
-        String[] path = {"nal2", "abh", "abg", "abf", "aba", "aas", "aau", "le1", "abj", "le3", "aap", "nw2", "nw1", "ew4"};
-
         Map<String, ImageView> line_path = new HashMap<>();
 
         int ivl_len = imageview_list.length;
-
         for (int i = 0; i < ivl_len; i++) {
             imageview_list[i].setVisibility(View.GONE);
             String[] parts;
@@ -253,10 +243,19 @@ public class MainActivity extends AppCompatActivity {
             line_path.put(reversePath, imageview_list[i]);
         }
 
+        //Sample Path: Main Gate to Lagoon Entrance 1
+        //String[] path = {"mg", "aaa", "aaq", "aar", "aat", "aau", "le1"};
+        //String[] path = {"le1", "aau", "aat", "aar", "aaq", "aaa", "mg"};
+
+        //Sample Path: Grandstand to Linear Park 1
+        //String[] path = {"gs", "wor", "aah", "aag", "aaf", "ew1", "aai", "ew2", "aaj", "lp1"};
+
+        //Sample Path: Ninoy Library 2 to East Wing 4
+        //String[] path = {"nal2", "abh", "abg", "abf", "aba", "aas", "aau", "le1", "abj", "le3", "aap", "nw2", "nw1", "ew4"};
+
         int path_length = path.length;
         int starting_point = 0;
         String previous_node = null, combined_node;
-
         for (int j = 0; j < path_length; j++) {
             if (starting_point != 0) {
                 combined_node = previous_node + "_" + path[j];
