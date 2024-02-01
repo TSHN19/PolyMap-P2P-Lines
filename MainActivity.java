@@ -253,8 +253,6 @@ public class MainActivity extends AppCompatActivity {
             line_path.put(reversePath, imageview_list[i]);
         }
 
-        //line_path.put("", );
-
         int path_length = path.length;
         int starting_point = 0;
         String previous_node = null, combined_node;
